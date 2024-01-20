@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Diablo II
+Icon=/opt/d2launcher/res/icon.svg
+Exec=/opt/d2launcher/d2launcher
+Terminal=false
+Type=Application
+Categories=Game;

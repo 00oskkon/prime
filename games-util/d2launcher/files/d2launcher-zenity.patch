@@ -1,0 +1,13 @@
+diff --git a/d2launcher b/d2launcher
+index 01dabb1..8bea97e 100755
+--- a/d2launcher
++++ b/d2launcher
+@@ -115,7 +115,7 @@ gui_dialog_size="9"
+ main() {
+ 
+     # Check Dependencies
+-    if ! [ -x "$(command -v /bin/zenity)" ]; then
++    if ! [ -x "$(command -v /usr/bin/zenity)" ]; then
+         send_notify "zenity not installed"
+         exit 1
+     fi
