@@ -22,10 +22,6 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 
-BDEPEND="
-	app-arch/unzip
-"
-
 src_prepare() {
 	rm -r ${S}/Tesseract302
 	rm ${S}/Hunspell{x86,x64}.dll
