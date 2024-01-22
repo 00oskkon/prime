@@ -72,7 +72,7 @@ pkg_postinst() {
 	fi
 
 	if use plymouth; then
-		plymouth-set-default-theme -R kali
+		plymouth-set-default-theme -R kali || die "Setting plymouth theme failed!"
 	fi
 }
 
