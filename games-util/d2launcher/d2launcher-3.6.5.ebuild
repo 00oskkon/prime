@@ -2,12 +2,11 @@ EAPI=8
 
 DESCRIPTION="Launcher for Diablo 2, Median XL and D2 Stats"
 HOMEPAGE="https://github.com/murkl/d2launcher"
-SRC_URI="https://github.com/murkl/d2launcher/archive/refs/tags/${PV}.tar.gz -> ${PV}.tar.gz"
+SRC_URI="https://github.com/murkl/d2launcher/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="unknown"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
 
 DEPEND="
         app-emulation/wine-staging
@@ -24,8 +23,6 @@ DEPEND="
 
 RDEPEND="${DEPEND}"
 
-BDEPEND=""
-
 PATCHES=(
         "${FILESDIR}"/${PN}-zenity.patch
 )
@@ -37,7 +34,7 @@ src_install() {
 	fperms +x "/opt/${PN}/${PN}"
 
         insinto /usr/share/applications
-        doins "${FILESDIR}/${PN}.desktop"
+        doins "${FILESDIR}/${PN}.desktop" || die "Install failed!"
 }
 
 pkg_postrm() {
