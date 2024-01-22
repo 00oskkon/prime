@@ -15,6 +15,11 @@ S=${WORKDIR}
 
 RESTRICT="binchecks strip"
 
+DEPEND="
+	grub? ( sys-boot/grub )
+	plymouth? ( sys-boot/plymouth )
+"
+
 src_unpack() {
 	unpack ${P}.tar.gz
 }
