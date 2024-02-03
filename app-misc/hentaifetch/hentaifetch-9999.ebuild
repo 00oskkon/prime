@@ -18,3 +18,14 @@ DEPEND="
 "
 
 RDEPEND="${DEPEND}"
+
+src_compile() {
+	return
+}
+
+src_install() {
+	dodir /usr/bin
+	insinto /usr/bin
+	insopts -m755
+	doins ${S}/${PN} || die "Install failed!"
+}
