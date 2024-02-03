@@ -2,7 +2,7 @@ EAPI=8
 
 inherit xdg-utils
 
-DESCRIPTION="GTK theme included with Kali Linux"
+DESCRIPTION="Themes for GTK, grub, and plymouth included with Kali Linux"
 HOMEPAGE="https://gitlab.com/kalilinux/packages/kali-themes"
 SRC_URI="https://gitlab.com/kalilinux/packages/${PN}/-/archive/kali/${PV}/${PN}-kali-master.tar.gz -> ${P}.tar.gz"
 
