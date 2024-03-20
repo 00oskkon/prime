@@ -36,9 +36,7 @@ src_install() {
 	insinto /opt/subtitleedit
 	doins -r ${S}/*
 
-	insinto /usr/bin
-	doins ${FILESDIR}/subtitleedit
-	fperms +x /usr/bin/subtitleedit
+	dobin ${FILESDIR}/subtitleedit
 
 	dodir /usr/share/applications/
 	insinto /usr/share/applications
