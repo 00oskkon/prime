@@ -9,7 +9,7 @@ OLD_P="lazarus-2.2.4"
 
 DESCRIPTION="Feature rich visual programming environment emulating Delphi"
 HOMEPAGE="https://www.lazarus-ide.org/"
-SRC_URI="https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_${MY_P}/lazarus-lazarus_${MY_P}.tar.gz"
+SRC_URI="https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_${MY_P}/lazarus-lazarus_${MY_P}.tar.gz -> ${PN}.tar.gz"
 
 LICENSE="GPL-2 LGPL-2.1-with-linking-exception"
 SLOT="0/2.2" # Note: Slotting Lazarus needs slotting fpc, see DEPEND.
