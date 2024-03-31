@@ -41,7 +41,7 @@ RDEPEND="${DEPEND}"
 
 RESTRICT="strip" #269221
 
-S="${WORKDIR}/${PN}-${PN}_${MY_P}"
+S="${WORKDIR}/lazarus-lazarus_${MY_P}"
 
 src_prepare() {
 	default
@@ -67,7 +67,7 @@ src_compile() {
 
 src_install() {
 	diropts -m0755
-	dodir /usr/share
+	dodir /usr/share/lazarus
 	# Using rsync to avoid unnecessary copies and cleaning...
 	# Note: *.o and *.ppu are needed
 	rsync -a \
@@ -81,7 +81,7 @@ src_install() {
 		--exclude="killme*" --exclude=".gdb_hist*" \
 		--exclude="debian"  --exclude="COPYING*" \
 		--exclude="*.app" \
-		"${S}" "${ED}"/usr/share \
+		"${S}/" "${ED}"/usr/share/lazarus \
 		|| die "Unable to copy files!"
 
 	if ( use gui ) ; then
