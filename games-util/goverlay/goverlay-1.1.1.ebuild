@@ -19,7 +19,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 BDEPEND="
-	>=dev-lang/lazarus-2.2.4-r1[gui]
+	>=dev-lang/lazarus-3.2
 	dev-vcs/git
 "
 
