@@ -10,10 +10,6 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND=""
-
-RDEPEND="${DEPEND}"
-
 RDEPEND="
 	x11-libs/gtk+
 "
@@ -29,16 +25,11 @@ BDEPEND="
 "
 
 src_compile() {
-	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]]; then
-		emake release || die "emake failed"
-	fi
+	emake release || die "emake failed"
 }
 
 src_install() {
-	dodir /usr/bin/
-	insinto /usr/bin
-	insopts -m755
-	doins ${S}/build/release/src/${PN} || die "Install failed!"
+	dobin ${S}/build/release/src/${PN} || die "Install failed!"
 
 	dodir /usr/share/applications/
 	insinto /usr/share/applications
