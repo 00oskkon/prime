@@ -16,10 +16,14 @@ DEPEND="
 	dev-qt/qtbase:6=[network,gui,widgets]
 "
 
-S="${WORKDIR}/lazarus-lazarus_${MY_P}/lcl/interfaces/qt6/cbindings"
+PATCHES=(
+	"${FILESDIR}/qt-6.7.patch"
+)
+
+S="${WORKDIR}/lazarus-lazarus_${MY_P}"
 
 src_configure() {
-	eqmake6 Qt6Pas.pro
+	eqmake6 lcl/interfaces/qt6/cbindings/Qt6Pas.pro
 }
 
 src_install() {
