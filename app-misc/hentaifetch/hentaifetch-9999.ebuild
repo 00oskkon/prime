@@ -18,6 +18,10 @@ DEPEND="
 
 RDEPEND="${DEPEND}"
 
+PATCHES=(
+	"${FILESDIR}/${PN}-jp2a.patch"
+)
+
 src_install() {
 	dobin "${S}/${PN}" || die "Install failed!"
 }
