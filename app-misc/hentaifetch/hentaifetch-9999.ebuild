@@ -2,10 +2,10 @@ EAPI=8
 
 inherit git-r3
 
-EGIT_REPO_URI="https://github.com/StaringLongingly/hentaifetch.git"
+EGIT_REPO_URI="https://github.com/andeen171/hentaifetch.git"
 
 DESCRIPTION="neofetch but with hentai"
-HOMEPAGE="https://github.com/StaringLongingly/hentaifetch"
+HOMEPAGE="https://github.com/andeen171/hentaifetch"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -13,7 +13,7 @@ SLOT="0"
 DEPEND="
 	net-misc/curl
 	app-misc/neofetch
-	media-gfx/chafa
+	media-gfx/jp2a
 "
 
 RDEPEND="${DEPEND}"
