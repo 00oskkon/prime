@@ -34,15 +34,15 @@ src_prepare() {
 src_install() {
 	dodir /opt/subtitleedit/
 	insinto /opt/subtitleedit
-	doins -r ${S}/*
+	doins -r ${S}/* || die "Install failed!"
 
-	dobin ${FILESDIR}/subtitleedit
+	dobin ${FILESDIR}/subtitleedit || die "Install failed!"
 
 	dodir /usr/share/applications/
 	insinto /usr/share/applications
-	doins ${FILESDIR}/subtitleedit.desktop
+	doins ${FILESDIR}/subtitleedit.desktop || die "Install failed!"
 
 	dodir /usr/share/pixmaps/
 	insinto /usr/share/pixmaps
-	doins ${FILESDIR}/subtitleedit.png
+	doins ${FILESDIR}/subtitleedit.png || die "Install failed!"
 }
