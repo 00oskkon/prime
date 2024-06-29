@@ -16,7 +16,7 @@ RDEPEND="${DEPEND}"
 src_install() {
 	dodir /opt/gambling/
 	insinto /opt/gambling
-	doins ${S}/* || die "Install failed!"
+	doins -r ${S}/* || die "Install failed!"
 	fperms +x /opt/${PN}/${PN}.sh
 
 	insinto /usr/share/applications
