@@ -1,0 +1,13 @@
+diff --git a/d2launcher b/d2launcher
+index a81fc5f..9b32d71 100644
+--- a/d2launcher
++++ b/d2launcher
+@@ -128,7 +128,7 @@ main() {
+         echo "notify-send not installed"
+         exit 1
+     fi
+-    if ! [ -x "$(command -v /bin/zenity)" ]; then
++    if ! [ -x "$(command -v /usr/bin/zenity)" ]; then
+         send_notify "zenity not installed"
+         exit 1
+     fi

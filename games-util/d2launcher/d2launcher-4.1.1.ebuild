@@ -24,7 +24,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 PATCHES=(
-        "${FILESDIR}"/${PN}-zenity.patch
+        "${FILESDIR}"/${PN}-zenity-${PV}.patch
 )
 
 src_install() {
@@ -35,9 +35,4 @@ src_install() {
 
         insinto /usr/share/applications
         doins "${FILESDIR}/${PN}.desktop" || die "Install failed!"
-}
-
-pkg_postrm() {
-	ewarn "d2launcher has been unmerged, however,"
-	ewarn "you must remove the ~/.d2launcher directory"
 }
