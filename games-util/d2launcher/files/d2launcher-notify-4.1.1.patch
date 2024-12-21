@@ -1,0 +1,13 @@
+diff --git a/d2launcher b/d2launcher
+index a81fc5f..8a77d0c 100755
+--- a/d2launcher
++++ b/d2launcher
+@@ -124,7 +124,7 @@ gui_dialog_size="9"
+ main() {
+ 
+     # Check Dependencies
+-    if ! [ -x "$(command -v /bin/notify-send)" ]; then
++    if ! [ -x "$(command -v /usr/bin/notify-send)" ]; then
+         echo "notify-send not installed"
+         exit 1
+     fi
