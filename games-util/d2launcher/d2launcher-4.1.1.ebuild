@@ -25,7 +25,7 @@ RDEPEND="${DEPEND}"
 
 PATCHES=(
         "${FILESDIR}"/${PN}-zenity-${PV}.patch
-	"${FILESDIR}"/${PN}-notify-${PV}.patc
+	"${FILESDIR}"/${PN}-notify-${PV}.patch
 )
 
 src_install() {
