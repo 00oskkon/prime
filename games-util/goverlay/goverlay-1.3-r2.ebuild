@@ -23,9 +23,7 @@ BDEPEND="
 	dev-vcs/git
 "
 
-RESTRICT="
-	!strip
-"
+RESTRICT="strip"
 
 src_compile() {
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]]; then
