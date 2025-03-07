@@ -4,7 +4,7 @@ inherit desktop
 
 FPCVER="3.2.2"
 
-MY_P="3_6"
+MY_P="3_8"
 
 DESCRIPTION="Feature rich visual programming environment emulating Delphi"
 HOMEPAGE="https://www.lazarus-ide.org/"
