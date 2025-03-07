@@ -2,7 +2,7 @@ EAPI=8
 
 DESCRIPTION="A GUI to help manage Vulkan/OpenGL overlays"
 HOMEPAGE="https://github.com/benjamimgois/goverlay"
-SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${PV}-2.tar.gz -> ${PV}.tar.gz"
+SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${PV}-2.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -19,11 +19,13 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 BDEPEND="
-	>=dev-lang/lazarus-3.2
+	>=dev-lang/lazarus-3.2:=
 	dev-vcs/git
 "
 
 RESTRICT="strip"
+
+S="${WORKDIR}/${P}-2"
 
 src_compile() {
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]]; then
