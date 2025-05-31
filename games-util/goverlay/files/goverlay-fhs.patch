@@ -1,0 +1,10 @@
+diff --git a/Makefile b/Makefile
+index c946a5d..78331ea 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-prefix = /usr/local
++prefix = /usr
+ bindir = /bin
+ libexecdir = /libexec
+ datadir = /share

@@ -2,7 +2,7 @@ EAPI=8
 
 DESCRIPTION="A GUI to help manage Vulkan/OpenGL overlays"
 HOMEPAGE="https://github.com/benjamimgois/goverlay"
-SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${PV}-3.tar.gz -> ${P}-3.tar.gz"
+SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${P}-3.tar.gz -> ${P}-3.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -11,7 +11,7 @@ IUSE=""
 
 DEPEND="
 	games-util/mangohud
-	media-libs/mesa-demos
+	x11-apps/mesa-progs
 	dev-util/vulkan-tools
 	media-gfx/vkBasalt
 	dev-libs/libqt6pas
@@ -22,6 +22,10 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	>=dev-lang/lazarus-3.2:=
 "
+
+PATCHES=(
+		"${FILESDIR}"/${PN}-fhs.patch
+	)
 
 RESTRICT="strip"
 
