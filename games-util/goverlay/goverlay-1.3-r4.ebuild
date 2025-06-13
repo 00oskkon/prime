@@ -2,7 +2,7 @@ EAPI=8
 
 DESCRIPTION="A GUI to help manage Vulkan/OpenGL overlays"
 HOMEPAGE="https://github.com/benjamimgois/goverlay"
-SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${P}-3.tar.gz -> ${P}-3.tar.gz"
+SRC_URI="https://github.com/benjamimgois/goverlay/archive/refs/tags/${PV}-3.tar.gz -> ${P}-3.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
