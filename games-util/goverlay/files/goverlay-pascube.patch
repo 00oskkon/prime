@@ -1,0 +1,18 @@
+diff --git a/overlayunit.pas b/overlayunit.pas
+index 911d6e4..42dc28e 100644
+--- a/overlayunit.pas
++++ b/overlayunit.pas
+@@ -1623,13 +1623,6 @@ function CheckDependencies(out Missing: TStringList): Boolean;
+ begin
+   Missing := TStringList.Create;
+ 
+-  //check if pascube is available (skip in Flatpak mode - no Flatpak version yet)
+-  if not IsRunningInFlatpak then
+-  begin
+-    if not IsCommandAvailable('pascube') then
+-       Missing.Add('pascube');
+-  end;
+-
+   // Check for Flatpak runtimes or native binaries
+   if IsRunningInFlatpak then
+   begin
