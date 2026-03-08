@@ -3,6 +3,9 @@ EAPI=8
 inherit xdg-utils git-r3
 
 EGIT_REPO_URI="https://gitlab.com/kalilinux/packages/kali-themes.git"
+EGIT_OVERRIDE_REPO_GIT_GITLAB_COM_KALILINUX_BUILD_SCRIPTS_KALI_INSTALLER="https://gitlab.com/kalilinux/build-scripts/kali-installer.git"
+EGIT_OVERRIDE_REPO_GIT_GITLAB_COM_KALILINUX_BUILD_SCRIPTS_KALI_LIVE="https://gitlab.com/kalilinux/build-scripts/kali-live.git"
+EGIT_OVERRIDE_REPO_GIT_GITLAB_COM_KALILINUX_PACKAGES_DEBIAN_INSTALLER="https://gitlab.com/kalilinux/packages/debian-installer.git"
 
 DESCRIPTION="Themes for GTK, grub, and plymouth included with Kali Linux"
 HOMEPAGE="https://gitlab.com/kalilinux/packages/kali-themes"
