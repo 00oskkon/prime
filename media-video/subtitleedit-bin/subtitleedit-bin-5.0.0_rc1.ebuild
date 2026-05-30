@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit desktop
+inherit desktop xdg
 
 MY_PN="${PN/-bin/}"
 MY_PV="5.0.0-rc1"
@@ -37,5 +37,13 @@ src_install() {
 
         doexe SubtitleEdit libHarfBuzzSharp.so libonigwrap.so libSkiaSharp.so
 
-        dosym -r "${DESTDIR}/${MY_PN}" "/usr/bin/${MY_PN}"
+        dosym -r "${DESTDIR}/SubtitleEdit" "/usr/bin/${MY_PN}"
+}
+
+pkg_postinst() {
+        xdg_icon_cache_update
+}
+
+pkg_postrm() {
+        xdg_icon_cache_update
 }
