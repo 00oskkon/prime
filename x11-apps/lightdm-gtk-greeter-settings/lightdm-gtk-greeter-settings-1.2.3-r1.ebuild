@@ -2,7 +2,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{13..14} )
 
 inherit distutils-r1 xdg
 
@@ -27,6 +27,7 @@ RDEPEND="
 	')
 "
 BDEPEND="
+	dev-python/gpep517
 	$(python_gen_cond_dep '
 		dev-python/python-distutils-extra[${PYTHON_USEDEP}]
 	')
