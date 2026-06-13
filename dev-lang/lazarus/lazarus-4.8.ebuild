@@ -2,7 +2,7 @@ EAPI=8
 
 inherit desktop
 
-MY_P="4_6"
+MY_P="4_8"
 
 DESCRIPTION="Feature rich visual programming environment emulating Delphi"
 HOMEPAGE="https://www.lazarus-ide.org/"
