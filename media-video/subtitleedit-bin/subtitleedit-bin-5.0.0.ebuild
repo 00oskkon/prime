@@ -3,11 +3,11 @@ EAPI=8
 inherit desktop xdg
 
 MY_PN="${PN/-bin/}"
-MY_PV="5.0.0-rc4"
+#MY_PV="5.0.0-rc4"
 
 DESCRIPTION="An advanced subtitle editor and converter"
 HOMEPAGE="https://www.nikse.dk/SubtitleEdit"
-SRC_URI="https://github.com/SubtitleEdit/subtitleedit/releases/download/v${MY_PV}/SubtitleEdit-Linux-x64.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/SubtitleEdit/subtitleedit/releases/download/v${PV}/SubtitleEdit-Linux-x64.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
