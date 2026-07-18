@@ -12,7 +12,7 @@ DEPEND="
         app-emulation/wine-staging
         gnome-extra/zenity
         net-misc/curl
-        app-arch/p7zip
+        app-arch/7zip
         app-arch/unrar
         app-misc/jq
         x11-misc/wmctrl
@@ -24,8 +24,8 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 PATCHES=(
-        "${FILESDIR}"/${PN}-zenity-${PV}.patch
-	"${FILESDIR}"/${PN}-notify-${PV}.patch
+        "${FILESDIR}"/${PN}-zenity-4.1.1.patch
+	"${FILESDIR}"/${PN}-notify-4.1.1.patch
 )
 
 src_install() {
