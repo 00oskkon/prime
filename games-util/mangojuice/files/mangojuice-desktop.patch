@@ -1,0 +1,11 @@
+diff --git a/data/io.github.radiolamp.mangojuice.desktop.in.in b/data/io.github.radiolamp.mangojuice.desktop.in.in
+index c963147..95eacbb 100644
+--- a/data/io.github.radiolamp.mangojuice.desktop.in.in
++++ b/data/io.github.radiolamp.mangojuice.desktop.in.in
+@@ -7,5 +7,5 @@ Exec=mangojuice %U
+ Icon=@APP_ID_RELEVANT@
+ Terminal=false
+ Type=Application
+-Categories=Utility;Application;
++Categories=Utility;Settings;
+ StartupNotify=true
