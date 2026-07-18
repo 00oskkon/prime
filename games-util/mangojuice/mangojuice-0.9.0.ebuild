@@ -6,7 +6,7 @@ DESCRIPTION="A convenient alternative for setting up MangoHud"
 HOMEPAGE="https://github.com/radiolamp/mangojuice"
 SRC_URI="https://github.com/radiolamp/mangojuice/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
